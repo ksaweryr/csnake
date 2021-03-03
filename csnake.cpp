@@ -132,7 +132,7 @@ namespace csnake {
 	    for(vec2& node : game->snake)
 	        board[node.y][node.x] = '@';
 
-	    move(0, 0);
+	    wmove(win, 0, 0);
 	    for(std::vector<char>& r : board) {
 	        wprintw(win, "%s\n", std::string(r.begin(), r.end()).c_str());
 	    }
